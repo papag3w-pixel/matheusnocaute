@@ -2,6 +2,11 @@
 
 Página única de links (substitui linksto.be/matheusnocaute). HTML/CSS/JS puros, sem build.
 
+**No ar:** https://papag3w-pixel.github.io/matheusnocaute/ (GitHub Pages, repositório papag3w-pixel/matheusnocaute)
+
+## Atualizar o site
+Edite os arquivos e rode nesta pasta: `git add -A && git commit -m "atualiza bio" && git push` — o site atualiza em ~1 minuto.
+
 ## Visualizar
 Abra `index.html` no navegador (duplo clique). Para testar no celular na mesma rede:
 `npx serve .` e acesse o IP mostrado.
@@ -22,8 +27,9 @@ Perfil antigo do Spotify (catálogo anterior): open.spotify.com/artist/1q3o2gGbS
 Perfil onde saiu Barbie Cavalona: open.spotify.com/artist/1iQjPgXL63lA66eK3XIM58
 
 ## Imagens
-`assets/img/` — recortes otimizados (WebP) das fotos em `fotos MN/`:
+`assets/img/` — fotos de `fotos MN/` com fundo removido (localmente) e salvas em WebP transparente; o fundo de cada botão é desenhado no CSS.
 1.png → barbie-cavalona.webp · 4.png → contrate.webp · 3.png → producao.webp · 2.png → spotify.webp
+A pasta `fotos MN/` não vai para o site (está no .gitignore).
 
-## Ao publicar
-Troque `og:image` em `index.html` pela URL absoluta (ex.: `https://seudominio.com/assets/img/og.jpg`).
+## Domínio próprio (futuro)
+Em Settings → Pages do repositório, informe o domínio e troque as URLs de `og:image`, `og:url` e `canonical` em `index.html`.
